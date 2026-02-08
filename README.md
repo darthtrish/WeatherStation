@@ -1,7 +1,7 @@
 # Weather Station CLI (Go)
 
 This project is a command-line Weather Station program written in Go.  
-It was developed as part of a programming task at **Hive Helsinki**.
+This serves as a practice task from **Hive Helsinki**.
 
 The application stores and updates weather measurements using sensor IDs and allows the user to update, view, and clear the data interactively through standard input.
 
