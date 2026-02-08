@@ -5,13 +5,10 @@ It was developed as part of a programming task at **Hive Helsinki**.
 
 The application stores and updates weather measurements using sensor IDs and allows the user to update, view, and clear the data interactively through standard input.
 
----
-
 ## Overview
 
 The program reads measurement inputs in `id,value` format, maps them to specific weather fields, and stores them in a structured data model. Values are stored as pointers so the program can distinguish between missing data (`NULL`) and actual numeric values (including `0`).
 
----
 
 ## Features
 
@@ -22,7 +19,6 @@ The program reads measurement inputs in `id,value` format, maps them to specific
 - Clear all stored measurements
 - Pointer-based storage to differentiate missing vs zero values
 
----
 
 ## Data Model
 
@@ -40,7 +36,6 @@ Weather data is stored in a `WeatherData` struct with pointer fields:
 
 Using `*float64` allows the program to represent missing values as `nil`.
 
----
 
 ## Supported Sensor IDs
 
@@ -56,7 +51,6 @@ Using `*float64` allows the program to represent missing values as `nil`.
 | 15  | soilMoisture |
 | 22  | cloudCover |
 
----
 
 ## How to Run
 
@@ -98,7 +92,6 @@ Rules:
 - The second value is a number or `NULL`
 - `NULL` clears that measurement
 
----
 
 ## Commands
 
@@ -126,7 +119,6 @@ exit
 
 Terminates the application.
 
----
 
 ## Implementation Notes
 
@@ -141,7 +133,7 @@ Terminates the application.
 
 - Printing checks for `nil` pointers and outputs `NULL` when no value is stored
 
----
+
 
 ## Possible Extensions
 
